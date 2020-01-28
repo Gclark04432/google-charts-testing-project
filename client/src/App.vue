@@ -14,6 +14,7 @@ import ChartsService from '../services/ChartsService';
 import ScatterGraph from './components/ScatterGraph.vue';
 import BarGraph from './components/BarGraph.vue';
 import { GChart } from 'vue-google-charts'
+import { eventBus } from './main.js'
 
 export default {
 	name: "app",
@@ -32,7 +33,8 @@ export default {
   methods: {
     fetchData(){
       ChartsService.getCharts()
-      .then(activities => this.activities = activities);
+      .then(activities => this.activities = activities)
+      .then(() => eventBus.$emit('got-charts', this.activities))
     }
   }
 }

@@ -5,4 +5,4 @@ export default {
     return fetch(baseURL)
     .then(res => res.json())
   }
-  }
+}

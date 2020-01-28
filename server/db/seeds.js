@@ -9,6 +9,6 @@ db.charts.insertMany([
   },
   {
     name: "Activity 2",
-    timeStamps: [new Date(2020, 1, 28), new Date(2020, 1, 27), new Date(2020, 1, 26), new Date(2020, 1, 25), new Date(2020, 1, 22), new Date(2020, 1, 20)]
+    timeStamps: [new Date(2020, 1, 27), new Date(2020, 1, 26), new Date(2020, 1, 25), new Date(2020, 1, 22), new Date(2020, 1, 20)]
   }
 ]);
